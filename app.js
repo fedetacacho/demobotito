@@ -37,5 +37,5 @@ var bot = new builder.UniversalBot(connector);
 bot.set('storage', tableStorage);
 
 bot.dialog('/', function (session) {
-    session.send('Has dicho ' + session.message.text);
+    session.send('Dijiste: ' + session.message.text);
 });
